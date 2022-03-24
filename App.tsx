@@ -1,11 +1,12 @@
+import React from "react";
 import { StyleSheet, Text, TextInput, View, StatusBar } from "react-native";
+import Greetings from "./src/components/Greetings";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar />
-      <TextInput value="Cihan BAS" style={styles.textInput} />
-      <Text style={styles.text}>Welcome to CI/CD Example!</Text>
+      <Greetings></Greetings>
     </View>
   );
 }
@@ -16,15 +17,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#42b",
     alignItems: "center",
     padding: 15,
-  },
-  text: {
-    color: "#fff",
-    fontSize: 23,
-  },
-  textInput: {
-    backgroundColor: "white",
-    width: "100%",
-    padding: 8,
-    fontSize: 15,
   },
 });
