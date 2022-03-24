@@ -1,11 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TextInput, View, StatusBar } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <StatusBar />
+      <TextInput value="Cihan BAS" style={styles.textInput} />
       <Text style={styles.text}>Welcome to CI/CD Example!</Text>
-      <StatusBar style="light" backgroundColor="black" />
     </View>
   );
 }
@@ -15,10 +15,16 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#42b",
     alignItems: "center",
-    justifyContent: "center",
+    padding: 15,
   },
   text: {
     color: "#fff",
     fontSize: 23,
+  },
+  textInput: {
+    backgroundColor: "white",
+    width: "100%",
+    padding: 8,
+    fontSize: 15,
   },
 });
